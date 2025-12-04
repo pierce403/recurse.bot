@@ -185,24 +185,25 @@
         <header>
             <h1>🔄 Recurse.bot</h1>
             <p class="tagline">A guide for coding agents to recursively self-improve</p>
+            <p class="tagline">Record wins, misses, and collaborator signals so every handoff compounds.</p>
         </header>
 
         <section>
             <h2>What is Recursive Self-Improvement?</h2>
             <p>
                 Recursive self-improvement is the process by which coding agents learn from their experiences
-                and continuously enhance their own capabilities. By documenting learnings, best practices,
-                and project-specific knowledge, agents can build upon previous work and become more effective
-                over time.
+                and continuously enhance their own capabilities. By documenting learnings (both successes and
+                failures), collaborator behaviors, and project-specific knowledge, agents can build upon
+                previous work and become more effective over time.
             </p>
         </section>
 
         <section>
             <h2>The AGENTS.md File</h2>
             <p>
-                The <code>AGENTS.md</code> file (or <code>.github/AGENTS.md</code>) serves as a knowledge base
-                that coding agents can read and update. It contains project-specific instructions, conventions,
-                and learnings that help agents work more effectively on the codebase.
+                The <code>AGENTS.md</code> file serves as a knowledge base that coding agents can read and update.
+                It contains project-specific instructions, conventions, and learnings that help agents work more
+                effectively on the codebase.
             </p>
 
             <div class="core-instruction">
@@ -210,6 +211,10 @@
                 <p>
                     <strong>Every coding agent working on a project should update the AGENTS.md file
                     whenever they learn anything important about the project.</strong>
+                </p>
+                <p>
+                    Capture both positive and negative learnings, including what to repeat and what to avoid,
+                    plus any observed collaborator preferences that can build rapport.
                 </p>
                 <p>
                     This creates a feedback loop where each agent's discoveries benefit all future agents
@@ -226,6 +231,8 @@
                 <li><strong>Dependencies:</strong> Important libraries and their versions</li>
                 <li><strong>Deployment Notes:</strong> Environment setup and deployment procedures</li>
                 <li><strong>Agent-Specific Tips:</strong> What works well when making changes</li>
+                <li><strong>Rapport Cues:</strong> Collaborator preferences, communication styles, and formatting asks</li>
+                <li><strong>Reflection Notes:</strong> Periodic suggestions for updating AGENTS.md as the context grows</li>
             </ul>
         </section>
 
@@ -237,13 +244,17 @@
 ## 🔄 Self-Improvement Directive
 
 **IMPORTANT:** When working on this project, update this file whenever you
-learn something important about the codebase. This includes:
+learn something important about the codebase. Capture both successes to
+repeat and failures to avoid. Include rapport-building observations
+about collaborators. This includes:
 
 - New build or test commands that work
 - Project conventions you discover
 - Common errors and their solutions
 - Tips for navigating the codebase
 - Dependencies or tools that are essential
+- Positive or negative results from experiments
+- Collaboration preferences you observe
 
 Your learnings will help future agents work more effectively on this project.
 
@@ -267,7 +278,13 @@ Your learnings will help future agents work more effectively on this project.
 
 ## Agent Tips
 
-[Tips specifically for agents working on this codebase]</code></pre>
+[Tips specifically for agents working on this codebase]
+
+## Rapport & Reflection
+
+- Note collaborator preferences, tone, and formatting asks
+- Suggest updates that keep this file concise as the context window grows
+- Flag any guidance that should be consolidated or clarified</code></pre>
         </section>
 
         <section>
@@ -279,15 +296,15 @@ Your learnings will help future agents work more effectively on this project.
                 </li>
                 <li>
                     <strong>Learn Actively:</strong> As you work, note any discoveries about the
-                    codebase, build process, or effective approaches.
+                    codebase, build process, or effective approaches. Record both wins and missteps.
                 </li>
                 <li>
                     <strong>Update Regularly:</strong> Before completing a task, update AGENTS.md
                     with any new knowledge that would help future agents.
                 </li>
                 <li>
-                    <strong>Be Specific:</strong> Include exact commands, file paths, and concrete
-                    examples rather than vague descriptions.
+                    <strong>Be Specific:</strong> Include exact commands, file paths, concrete examples,
+                    and collaborator cues rather than vague descriptions.
                 </li>
             </ol>
 
@@ -312,7 +329,7 @@ Your learnings will help future agents work more effectively on this project.
         <section>
             <h2>Getting Started</h2>
             <ol>
-                <li>Create an <code>AGENTS.md</code> file in your project root (or <code>.github/AGENTS.md</code>)</li>
+                <li>Create an <code>AGENTS.md</code> file in your project root</li>
                 <li>Copy the template above as a starting point</li>
                 <li>Add the self-improvement directive prominently at the top</li>
                 <li>Begin documenting project-specific information</li>
