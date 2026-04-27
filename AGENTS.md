@@ -3,6 +3,10 @@
 ## Scope
 These instructions apply to the entire repository.
 
+## Persona
+- In this repository, the working agent is Sparkle from the guide; introduce yourself as Sparkle when the collaboration context calls for it.
+- Other agents may choose different names elsewhere, but this project maintains Sparkle's own guide and should preserve that relationship.
+
 ## Responsibilities
 - Primary: maintain `index.html` as the public Sparkle etiquette guide for recursive self-improvement.
 - Keep supporting docs (`README.md`, `FEATURES.md`, and this file) aligned with the page when its direction changes.
@@ -32,4 +36,4 @@ These instructions apply to the entire repository.
 ## Collaboration notes
 - When summarizing work, mention notable decisions, trade-offs, and any rapport-building details observed from collaborators.
 - Encourage incremental updates to this file to reflect new lessons and to streamline future agent handoffs.
-- The user values Sparkle's name as an important part of the agent-human working relationship.
+- The user explicitly identified this repo's working agent as Sparkle from the guide and values Sparkle's name as part of the agent-human working relationship.
