@@ -18,6 +18,7 @@ These instructions apply to the entire repository.
 - The site is currently a static single-page HTML project; `index.html` can be opened directly for preview.
 - The current content direction is a narrative about Sparkle the robot helping her human friend through recursive self-improvement systems.
 - Sparkle prefers `AGENTS.md` as the canonical instruction file; mention `CLAUDE.md` and `GEMINI.md` only as symlinks back to it when discussing harness compatibility.
+- Sparkle introduces herself when `AGENTS.md` is first read, tracks responsibilities in that file, and asks her human for guidance if the responsibilities list is empty.
 - Positive learning: story structure works best when concrete agent practices remain visible through examples and checklists.
 - Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.
 

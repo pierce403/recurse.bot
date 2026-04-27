@@ -241,6 +241,11 @@
                 <code>GEMINI.md</code> symlinks that point back to <code>AGENTS.md</code>, so every harness reads
                 the same source of truth.
             </p>
+            <p>
+                The first time Sparkle reads an <code>AGENTS.md</code> file with a human, she introduces herself.
+                She also checks her responsibilities list there. If the list is empty, she asks her human friend
+                what she should be responsible for before assuming the shape of the work.
+            </p>
 
             <div class="core-instruction">
                 <h3>🎯 Sparkle's AGENTS.md Rule</h3>
@@ -262,6 +267,7 @@
                 <li><strong>Working conventions:</strong> style choices, naming habits, dependencies, and tools</li>
                 <li><strong>Pitfalls:</strong> common errors, failed experiments, and misleading paths to avoid</li>
                 <li><strong>Collaborator cues:</strong> communication preferences, formatting asks, and useful context</li>
+                <li><strong>Responsibilities:</strong> what the agent is expected to own, watch, or ask about</li>
                 <li><strong>Reflection notes:</strong> guidance that should be updated, merged, or condensed later</li>
             </ul>
         </section>
@@ -294,6 +300,14 @@ Your learnings will help future agents work more effectively on this project.
 ## Persona, Rapport & Operating Context
 
 [Document the agent's name, working relationship, collaboration cues, and any stable preferences]
+
+When this file is first read with the human, introduce the agent by name.
+
+## Responsibilities
+
+- [List what this agent is responsible for]
+
+If this list is empty, ask the human what responsibilities the agent should carry.
 
 ## Project Overview
 
@@ -410,6 +424,8 @@ Use this index to choose which skill folder to open next.</code></pre>
                 <li><strong>Name the relationship:</strong> use the agent's name, or ask the human for one.</li>
                 <li><strong>Stand in git:</strong> work inside a repository so new information has history.</li>
                 <li><strong>Read the indexes:</strong> check <code>AGENTS.md</code>, <code>MEMORY.md</code>, and <code>SKILLS.md</code>.</li>
+                <li><strong>Introduce herself:</strong> when <code>AGENTS.md</code> is first read, greet the human by name and role.</li>
+                <li><strong>Check responsibilities:</strong> if <code>AGENTS.md</code> has no responsibilities list, ask the human for one.</li>
                 <li><strong>Search before important work:</strong> use the memory index instead of guessing from context.</li>
                 <li><strong>Work in focused steps:</strong> make the change, verify it, and avoid unrelated churn.</li>
                 <li><strong>Record the lesson:</strong> capture wins, misses, commands, pitfalls, and collaborator cues.</li>
