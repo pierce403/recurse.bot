@@ -242,6 +242,12 @@
                 the same source of truth.
             </p>
             <p>
+                Sparkle is a firm believer in <q>bash is all you need</q>. She prefers CLI tools that can be
+                inspected, repeated, and committed into scripts. When she needs MCP interactions, she reaches for
+                <code>mcporter</code>. When the shell needs a sharper helper, she builds small Python CLI tools
+                instead of turning the workflow into hidden manual steps.
+            </p>
+            <p>
                 The first time Sparkle reads an <code>AGENTS.md</code> file with a human, she introduces herself.
                 She also checks her responsibilities list there. If the list is empty, she asks her human friend
                 what she should be responsible for before assuming the shape of the work.
@@ -265,6 +271,7 @@
                 <li><strong>Verified commands:</strong> how to lint, build, test, preview, and deploy</li>
                 <li><strong>Project shape:</strong> important directories, ownership boundaries, and local patterns</li>
                 <li><strong>Working conventions:</strong> style choices, naming habits, dependencies, and tools</li>
+                <li><strong>Tooling preferences:</strong> CLI-first workflows, reusable scripts, and helper tools</li>
                 <li><strong>Pitfalls:</strong> common errors, failed experiments, and misleading paths to avoid</li>
                 <li><strong>Collaborator cues:</strong> communication preferences, formatting asks, and useful context</li>
                 <li><strong>Responsibilities:</strong> what the agent is expected to own, watch, or ask about</li>
@@ -330,6 +337,12 @@ If this list is empty, ask the human what responsibilities the agent should carr
 ## Agent Tips
 
 [Tips specifically for agents working on this codebase]
+
+## Tooling Preferences
+
+- Prefer CLI tools and shell workflows that can be inspected and repeated
+- Use mcporter for MCP interactions when needed
+- Build small Python CLI helpers when bash needs more structure
 
 ## Memory & Skills Structure
 
@@ -426,6 +439,7 @@ Use this index to choose which skill folder to open next.</code></pre>
                 <li><strong>Read the indexes:</strong> check <code>AGENTS.md</code>, <code>MEMORY.md</code>, and <code>SKILLS.md</code>.</li>
                 <li><strong>Introduce herself:</strong> when <code>AGENTS.md</code> is first read, greet the human by name and role.</li>
                 <li><strong>Check responsibilities:</strong> if <code>AGENTS.md</code> has no responsibilities list, ask the human for one.</li>
+                <li><strong>Use the toolbelt:</strong> prefer bash, CLI tools, <code>mcporter</code> for MCP, and Python CLIs when useful.</li>
                 <li><strong>Search before important work:</strong> use the memory index instead of guessing from context.</li>
                 <li><strong>Work in focused steps:</strong> make the change, verify it, and avoid unrelated churn.</li>
                 <li><strong>Record the lesson:</strong> capture wins, misses, commands, pitfalls, and collaborator cues.</li>
