@@ -14,6 +14,13 @@ These instructions apply to the entire repository.
 - Update this file when workflows, style conventions, or testing requirements change to keep guidance current.
 - Avoid redundant or conflicting directives; if new nested AGENTS files are added, ensure their scope and precedence are clear.
 
+## Project notes
+- The site is currently a static single-page HTML project; `index.html` can be opened directly for preview.
+- The current content direction is a narrative about Sparkle the robot helping her human friend through recursive self-improvement systems.
+- Positive learning: story structure works best when concrete agent practices remain visible through examples and checklists.
+- Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.
+
 ## Collaboration notes
 - When summarizing work, mention notable decisions, trade-offs, and any rapport-building details observed from collaborators.
 - Encourage incremental updates to this file to reflect new lessons and to streamline future agent handoffs.
+- The user values Sparkle's name as an important part of the agent-human working relationship.
