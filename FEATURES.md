@@ -19,6 +19,7 @@ A concise roadmap for the recurse.bot site, following the structure recommended 
 | Sample templates | ✅ | Embedded AGENTS.md, MEMORY.md, and SKILLS.md examples illustrate expected structure and content. |
 | Weekly advice check | ✅ | Sparkle checks recurse.bot periodically for new useful ideas. |
 | CLI-first tooling guidance | ✅ | Sparkle prefers bash, reusable CLI tools, mcporter for MCP work, and small Python CLIs when needed. |
+| Contribution link | ✅ | Page links to the GitHub repository for contributions. |
 | Project overview | ✅ | README describes the site's purpose and key resources. |
 | Licensing clarity | 🔄 | Apache 2.0 license text added; review periodically for updates. |
 | Feature tracking | 🔄 | This FEATURES.md captures current scope; update as new capabilities are added. |
