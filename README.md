@@ -9,6 +9,7 @@ adapted rather than copied blindly.
 Key resources:
 
 - **index.html** – the public-facing Sparkle etiquette guide, including AGENTS.md, MEMORY.md, and SKILLS.md patterns
+- **assets/og-card.svg** – the OpenGraph/social preview card referenced by the page metadata
 - **AGENTS.md** – repository-wide guidance for agents contributing to this project
 - **FEATURES.md** – a feature list and progress tracker for the site itself
 

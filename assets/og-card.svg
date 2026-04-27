@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sparkle's Agent Etiquette Guide</title>
+  <desc id="desc">A social preview card for Sparkle's etiquette guide for recursive self-improvement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.42" stop-color="#13294a"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="greenGlow" cx="0.18" cy="0.18" r="0.78">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.55"/>
+      <stop offset="0.42" stop-color="#10b981" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="0.82" cy="0.76" r="0.72">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.58"/>
+      <stop offset="0.46" stop-color="#2563eb" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e2e8f0"/>
+      <stop offset="0.48" stop-color="#d5fff2"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#94a3b8" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.72 0 0 0 0 0.51 0 0 0 0.62 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .sans { font-family: "Noto Sans", "Inter", "Segoe UI", Arial, sans-serif; }
+      .mono { font-family: "Noto Sans Mono", "Fira Code", Consolas, monospace; }
+      .muted { fill: #94a3b8; }
+      .text { fill: #e2e8f0; }
+      .panel { fill: rgba(15, 23, 42, 0.82); stroke: rgba(148, 163, 184, 0.28); }
+      .card { fill: rgba(30, 41, 59, 0.92); stroke: rgba(148, 163, 184, 0.35); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#greenGlow)"/>
+  <rect width="1200" height="630" fill="url(#blueGlow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <g filter="url(#softGlow)" opacity="0.95">
+    <path d="M86 502C182 428 183 265 291 205C393 148 488 229 546 124" fill="none" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-opacity="0.58"/>
+    <path d="M710 132C801 200 927 97 1036 191C1127 269 1065 414 1136 486" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-opacity="0.56"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="84" width="620" height="464" rx="34" class="panel" stroke-width="2"/>
+    <rect x="96" y="112" width="220" height="44" rx="22" fill="#10b981" fill-opacity="0.16" stroke="#10b981" stroke-opacity="0.75" stroke-width="2"/>
+    <text x="123" y="142" class="sans" fill="#aeffe0" font-size="21" font-weight="700" letter-spacing="1.6">SPARKLE'S GUIDE</text>
+    <text x="96" y="262" class="sans" fill="url(#titleGradient)" font-size="78" font-weight="800">Sparkle's</text>
+    <text x="96" y="356" class="sans" fill="url(#titleGradient)" font-size="88" font-weight="900">Etiquette</text>
+    <text x="96" y="450" class="sans" fill="url(#titleGradient)" font-size="88" font-weight="900">Guide</text>
+    <text x="100" y="512" class="sans muted" font-size="29">Recursive self-improvement for coding agents</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="744" y="102" width="294" height="238" rx="36" fill="#e2e8f0" fill-opacity="0.96" stroke="#ffffff" stroke-opacity="0.65" stroke-width="3"/>
+    <rect x="800" y="58" width="182" height="70" rx="32" fill="#e2e8f0" stroke="#ffffff" stroke-opacity="0.65" stroke-width="3"/>
+    <line x1="891" y1="58" x2="891" y2="24" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="891" cy="24" r="17" fill="#10b981"/>
+    <rect x="804" y="188" width="62" height="62" rx="19" fill="#2563eb"/>
+    <rect x="916" y="188" width="62" height="62" rx="19" fill="#10b981"/>
+    <path d="M828 256C858 286 923 286 954 256" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+    <text x="785" y="304" class="mono" fill="#1e293b" font-size="23">bash / memory / skills</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="710" y="382" width="220" height="118" rx="22" class="card" stroke-width="2"/>
+    <text x="734" y="427" class="sans text" font-size="28" font-weight="800">AGENTS.md</text>
+    <text x="734" y="470" class="sans muted" font-size="20">courtesy notes</text>
+
+    <rect x="956" y="382" width="174" height="118" rx="22" class="card" stroke-width="2"/>
+    <text x="980" y="427" class="sans text" font-size="28" font-weight="800">MEMORY</text>
+    <text x="980" y="470" class="sans muted" font-size="20">what persists</text>
+
+    <rect x="802" y="518" width="290" height="72" rx="22" class="card" stroke-width="2"/>
+    <text x="826" y="562" class="sans text" font-size="28" font-weight="800">SKILLS.md</text>
+    <text x="982" y="562" class="sans muted" font-size="20">open what helps</text>
+  </g>
+
+  <g stroke-linecap="round" opacity="0.92">
+    <path d="M1070 82h52M1096 56v52M1078 64l36 36M1114 64l-36 36" stroke="#10b981" stroke-width="4"/>
+    <path d="M625 98h38M644 79v38" stroke="#2563eb" stroke-width="4"/>
+    <path d="M1126 302h32M1142 286v32" stroke="#e2e8f0" stroke-width="4"/>
+    <path d="M724 560h30M739 545v30" stroke="#10b981" stroke-width="4"/>
+  </g>
+</svg>

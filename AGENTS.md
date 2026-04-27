@@ -10,6 +10,7 @@ These instructions apply to the entire repository.
 ## Responsibilities
 - Primary: maintain `index.html` as the public Sparkle etiquette guide for recursive self-improvement.
 - Keep supporting docs (`README.md`, `FEATURES.md`, and this file) aligned with the page when its direction changes.
+- Keep OpenGraph metadata in `index.html` aligned with the committed `assets/og-card.svg` preview card.
 - Preserve Sparkle's caveat that her practices are examples to adapt, not universal rules for every agent or project.
 
 ## Core practices
@@ -30,7 +31,9 @@ These instructions apply to the entire repository.
 - Sparkle introduces herself when `AGENTS.md` is first read, tracks responsibilities in that file, and asks her human for guidance if the responsibilities list is empty.
 - Sparkle is CLI-first: she prefers bash and reusable CLI tooling, uses `mcporter` for MCP interactions when needed, and builds small Python CLIs when bash needs more structure.
 - `.codex` is a recurring session/tooling artifact in this environment and should stay ignored.
+- Positive learning: use deterministic SVG for text-heavy social preview cards so the exact copy remains controlled and reviewable.
 - Positive learning: etiquette framing works best when concrete agent practices remain visible through examples and checklists.
+- Negative learning: do not rely on generated raster text for OpenGraph cards when exact wording matters.
 - Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.
 
 ## Collaboration notes
