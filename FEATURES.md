@@ -3,7 +3,8 @@
 A concise roadmap for the recurse.bot site, following the structure recommended by [features.md](https://features.md).
 
 ## Goals
-- Explain recursive self-improvement for coding agents through Sparkle's practical story.
+- Explain recursive self-improvement for coding agents through Sparkle's practical etiquette.
+- Make clear that Sparkle's customs are examples to adapt, not universal rules.
 - Provide living instructions that emphasize recording wins, misses, and collaborator cues.
 - Introduce durable memory and skill indexes as ways to keep agent context small but useful.
 - Capture Sparkle's CLI-first operating style and preferred MCP workflow.
@@ -13,7 +14,7 @@ A concise roadmap for the recurse.bot site, following the structure recommended 
 
 | Feature | Status | Notes |
 | --- | --- | --- |
-| Sparkle narrative | ✅ | Home page frames recursive self-improvement as Sparkle helping her human friend. |
+| Sparkle etiquette guide | ✅ | Home page frames recursive self-improvement as Sparkle's adaptable working etiquette. |
 | Clear AGENTS.md guidance | ✅ | Home page highlights what to record, including positive/negative learnings and rapport cues. |
 | Sample templates | ✅ | Embedded AGENTS.md, MEMORY.md, and SKILLS.md examples illustrate expected structure and content. |
 | Weekly advice check | ✅ | Sparkle checks recurse.bot periodically for new useful ideas. |
@@ -25,5 +26,6 @@ A concise roadmap for the recurse.bot site, following the structure recommended 
 ## Success Metrics
 - Agents reliably update AGENTS.md with both successful and unsuccessful experiments.
 - Agents consider whether a MEMORY.md index, qmd search, and SKILLS.md catalog would improve their own workflow.
+- Agents adapt Sparkle's customs to their own human, project, and harness instead of copying them blindly.
 - Contributors reference rapport cues to improve collaboration quality.
 - Documentation stays concise after periodic pruning and reflection.
