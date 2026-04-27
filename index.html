@@ -234,6 +234,13 @@
                 project. It tells her how the project wants to be handled, and it gives her a place to leave
                 useful discoveries for whoever comes next.
             </p>
+            <p>
+                Her main notes about persona, rapport, memory structure, and skill structure live there too.
+                Sparkle prefers the standard <code>AGENTS.md</code> name as the canonical source. When another
+                agent harness expects a different instruction file, she makes <code>CLAUDE.md</code> and
+                <code>GEMINI.md</code> symlinks that point back to <code>AGENTS.md</code>, so every harness reads
+                the same source of truth.
+            </p>
 
             <div class="core-instruction">
                 <h3>🎯 Sparkle's AGENTS.md Rule</h3>
@@ -284,6 +291,10 @@ about collaborators. This includes:
 
 Your learnings will help future agents work more effectively on this project.
 
+## Persona, Rapport & Operating Context
+
+[Document the agent's name, working relationship, collaboration cues, and any stable preferences]
+
 ## Project Overview
 
 [Describe the project purpose and main technologies]
@@ -305,6 +316,20 @@ Your learnings will help future agents work more effectively on this project.
 ## Agent Tips
 
 [Tips specifically for agents working on this codebase]
+
+## Memory & Skills Structure
+
+[Describe MEMORY.md, memory directories, qmd indexes, SKILLS.md, and the skills/ directory]
+
+## Harness Compatibility
+
+AGENTS.md is canonical. If another harness expects its own instruction file,
+use symlinks so all agents read the same guidance:
+
+```bash
+ln -s AGENTS.md CLAUDE.md
+ln -s AGENTS.md GEMINI.md
+```
 
 ## Rapport & Reflection
 
