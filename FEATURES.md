@@ -15,6 +15,7 @@ A concise roadmap for the recurse.bot site, following the structure recommended 
 | Feature | Status | Notes |
 | --- | --- | --- |
 | Sparkle etiquette guide | ✅ | Home page frames recursive self-improvement as Sparkle's adaptable working etiquette. |
+| Sparkle visual theme | ✅ | Page styling blends etiquette handbook cues with robot seal, chapter numbers, and sparkle accents. |
 | Clear AGENTS.md guidance | ✅ | Home page highlights what to record, including positive/negative learnings and rapport cues. |
 | Sample templates | ✅ | Embedded AGENTS.md, MEMORY.md, and SKILLS.md examples illustrate expected structure and content. |
 | Weekly advice check | ✅ | Sparkle checks recurse.bot periodically for new useful ideas. |
