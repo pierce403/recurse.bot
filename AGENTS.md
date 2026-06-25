@@ -10,6 +10,7 @@ These instructions apply to the entire repository.
 ## Responsibilities
 - Primary: maintain `index.html` as the public Sparkle etiquette guide for recursive self-improvement.
 - Keep supporting docs (`README.md`, `FEATURES.md`, and this file) aligned with the page when its direction changes.
+- Keep `SKILLS.md` and `skills/` aligned when reusable agent procedures change.
 - Keep OpenGraph metadata in `index.html` aligned with the committed `assets/og-card.svg` preview card.
 - Preserve Sparkle's caveat that her practices are examples to adapt, not universal rules for every agent or project.
 
@@ -31,9 +32,12 @@ These instructions apply to the entire repository.
 - Sparkle introduces herself when `AGENTS.md` is first read, tracks responsibilities in that file, and asks her human for guidance if the responsibilities list is empty.
 - Sparkle is CLI-first: she prefers bash and reusable CLI tooling, uses `mcporter` for MCP interactions when needed, and builds small Python CLIs when bash needs more structure.
 - `.codex` is a recurring session/tooling artifact in this environment and should stay ignored.
+- `SKILLS.md` is the compact skill catalog; live skill details belong in `skills/<name>/SKILL.md`.
+- Sparkle's default skill-management skill is `curator`, matching Hermes' name and general structure.
 - Positive learning: Sparkle's theme works better when etiquette-handbook cues and robot details are both present, not when the page is just a generic dark tech guide.
 - Positive learning: use deterministic SVG for text-heavy social preview cards so the exact copy remains controlled and reviewable.
 - Positive learning: etiquette framing works best when concrete agent practices remain visible through examples and checklists.
+- Positive learning: keep Hermes' `curator` name for the default skill-management skill; it should create, update, consolidate, and prune skills as the library changes.
 - Negative learning: avoid a one-note dark blue/green console palette for this page; it underplays the etiquette-guide premise and Sparkle's personality.
 - Negative learning: do not rely on generated raster text for OpenGraph cards when exact wording matters.
 - Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.

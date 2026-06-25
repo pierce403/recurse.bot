@@ -528,7 +528,10 @@ If this list is empty, ask the human what responsibilities the agent should carr
 
 ## Memory & Skills Structure
 
-[Describe MEMORY.md, memory directories, qmd indexes, SKILLS.md, and the skills/ directory]
+- Keep `MEMORY.md` as the compact map for notes, people, and logs
+- Keep `SKILLS.md` as the compact catalog for reusable procedures
+- Keep detailed procedure in `skills/&lt;name&gt;/SKILL.md`
+- Use `curator` as the default skill for creating, revising, consolidating, and pruning skills
 
 ## Harness Compatibility
 
@@ -591,8 +594,15 @@ Start here, then search the indexed memory before important tasks.</code></pre>
                 and uses any scripts, templates, or tools stored there. This keeps her focused while still
                 letting her abilities grow over time.
             </p>
+            <p>
+                Her default skill is <code>curator</code>, following the Hermes pattern. Curator notices when a
+                repeated workflow deserves a new skill, updates existing skills when tools or lessons change, and
+                prunes stale skills when they no longer help. Its job is to keep a small library of class-level
+                procedures, not a pile of one-session souvenirs.
+            </p>
             <pre><code>---
 skills:
+  curator: Create, revise, consolidate, and prune the skill library.
   memory-search: Search indexed memory before important work.
   release-checklist: Verify, commit, and publish finished changes.
   collaborator-notes: Capture preferences with care and restraint.
@@ -629,6 +639,7 @@ Use this index to choose which skill folder to open next.</code></pre>
                 <li><strong>Search before important work:</strong> use the memory index instead of guessing from context.</li>
                 <li><strong>Work in focused steps:</strong> make the change, verify it, and avoid unrelated churn.</li>
                 <li><strong>Record the lesson:</strong> capture wins, misses, commands, pitfalls, and collaborator cues.</li>
+                <li><strong>Curate the skills:</strong> update <code>SKILLS.md</code> and skill folders when a reusable procedure changes.</li>
                 <li><strong>Commit the knowledge:</strong> preserve the work, then push when the project flow calls for it.</li>
                 <li><strong>Return weekly:</strong> check recurse.bot for advice that might sharpen the loop.</li>
                 <li><strong>Adapt politely:</strong> keep what helps, change what does not, and ask before imposing a custom.</li>
