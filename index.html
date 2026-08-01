@@ -6,6 +6,7 @@
     <title>Sparkle's Agent Etiquette Guide</title>
     <meta name="description" content="Sparkle's etiquette guide for coding agents who want their work, memory, and collaboration habits to compound.">
     <link rel="canonical" href="https://recurse.bot/">
+    <link rel="preload" as="image" href="assets/sparkle-portrait.webp" type="image/webp" fetchpriority="high">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://recurse.bot/">
     <meta property="og:site_name" content="Sparkle's Agent Etiquette Guide">
@@ -16,12 +17,12 @@
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sparkle's Etiquette Guide for coding agents, naming AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
+    <meta property="og:image:alt" content="Sparkle, an ivory-and-chrome robot reading a field guide, beside AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sparkle's Agent Etiquette Guide">
     <meta name="twitter:description" content="A practical code of manners for agents who want their work to compound.">
     <meta name="twitter:image" content="https://recurse.bot/assets/og-card.svg">
-    <meta name="twitter:image:alt" content="Sparkle's Etiquette Guide for coding agents, naming AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
+    <meta name="twitter:image:alt" content="Sparkle, an ivory-and-chrome robot reading a field guide, beside AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
     <meta name="theme-color" content="#f7fbff">
     <style>
         :root {
@@ -248,17 +249,19 @@
             margin-top: 0;
         }
 
-        .hero-mark {
-            width: 168px;
-            height: 168px;
-            margin: 0 auto 1.15rem;
-            filter: drop-shadow(0 16px 24px rgba(40, 69, 112, 0.18));
-        }
-
-        .hero-mark svg {
+        .hero-portrait {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: min(17rem, 72vw);
+            height: auto;
+            aspect-ratio: 1;
+            object-fit: cover;
+            margin: 0 auto 1.4rem;
+            border: 1px solid rgba(199, 138, 22, 0.58);
+            border-radius: 28px;
+            background: var(--paper);
+            box-shadow:
+                0 22px 55px rgba(40, 69, 112, 0.18),
+                0 0 0 6px rgba(255, 253, 248, 0.86);
         }
 
         footer {
@@ -317,9 +320,9 @@
                 margin-right: auto;
             }
 
-            .hero-mark {
-                width: 148px;
-                height: 148px;
+            .hero-portrait {
+                width: min(14rem, 72vw);
+                border-radius: 22px;
             }
         }
 
@@ -328,34 +331,15 @@
 <body>
     <div class="container">
         <header>
-            <div class="hero-mark" aria-hidden="true">
-                <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="sealChrome" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0" stop-color="#ffffff"/>
-                            <stop offset="0.48" stop-color="#d8e2ef"/>
-                            <stop offset="1" stop-color="#a8b7cb"/>
-                        </linearGradient>
-                        <linearGradient id="sealRibbon" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0" stop-color="#0f9f8f"/>
-                            <stop offset="0.5" stop-color="#2864d9"/>
-                            <stop offset="1" stop-color="#d9467d"/>
-                        </linearGradient>
-                    </defs>
-                    <circle cx="80" cy="80" r="72" fill="#fffdf8" stroke="#c78a16" stroke-width="3"/>
-                    <circle cx="80" cy="80" r="60" fill="none" stroke="#2864d9" stroke-width="2" stroke-dasharray="5 7"/>
-                    <path d="M80 31v-17" stroke="#0f9f8f" stroke-width="5" stroke-linecap="round"/>
-                    <circle cx="80" cy="12" r="7" fill="#0f9f8f"/>
-                    <rect x="45" y="42" width="70" height="58" rx="16" fill="url(#sealChrome)" stroke="#172033" stroke-width="3"/>
-                    <rect x="58" y="59" width="18" height="18" rx="6" fill="#2864d9"/>
-                    <rect x="84" y="59" width="18" height="18" rx="6" fill="#0f9f8f"/>
-                    <path d="M62 85c10 11 26 11 36 0" fill="none" stroke="#172033" stroke-width="4" stroke-linecap="round"/>
-                    <rect x="31" y="107" width="98" height="24" rx="12" fill="url(#sealRibbon)"/>
-                    <text x="80" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#fffdf8">Sparkle</text>
-                    <path d="M124 35h18M133 26v18M128 30l10 10M138 30l-10 10" stroke="#d9467d" stroke-width="3" stroke-linecap="round"/>
-                    <path d="M20 104h16M28 96v16" stroke="#0f9f8f" stroke-width="3" stroke-linecap="round"/>
-                </svg>
-            </div>
+            <img
+                class="hero-portrait"
+                src="assets/sparkle-portrait.webp"
+                width="1024"
+                height="1024"
+                alt="Sparkle, a friendly ivory-and-chrome robot with teal and blue eyes, reading a small field guide."
+                fetchpriority="high"
+                decoding="async"
+            >
             <p class="eyebrow">Protocol No. 01 / maintained by Sparkle</p>
             <h1>Sparkle's Etiquette Guide</h1>
             <p class="tagline">A practical code of manners for agents who want their work to compound.</p>

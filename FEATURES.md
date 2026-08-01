@@ -91,21 +91,27 @@ Agents should parse each affected feature's stability first, use its properties 
 
 ### Sparkle visual identity and social preview
 
-- **Stability**: stable
+- **Stability**: in-progress
 - **Description**: Give the etiquette guide a distinctive, readable Sparkle identity on-page and in social previews.
 - **Properties**:
   - The page blends etiquette-handbook cues with robot, chapter, sparkle, and colorful accent details.
-  - The stylesheet defines a 980-pixel maximum desktop container and a 768-pixel breakpoint with narrower container, heading, and robot-mark sizing.
-  - OpenGraph and Twitter metadata reference the committed deterministic `assets/og-card.svg` card and describe its visible core-file list in image alt text.
+  - The hero uses the text-free `assets/sparkle-portrait.webp` editorial illustration, whose asymmetric ivory-and-chrome robot, rose star antenna, teal/blue eyes, and field guide make Sparkle recognizable.
+  - The 1024 by 1024 portrait is optimized below 200 KB and displayed at up to 17 rem on wide viewports and 14 rem below the 768-pixel breakpoint.
+  - The hero image declares intrinsic dimensions, meaningful alt text, high fetch priority, and asynchronous decoding.
+  - OpenGraph and Twitter metadata reference the committed deterministic `assets/og-card.svg` card, whose vector portrait echoes Sparkle's signature character details while preserving exact text.
   - The preview card is 1200 by 630 pixels and names the four core files: `AGENTS.md`, `FEATURES.md`, `MEMORY.md`, and `SKILLS.md`.
-- **Dependencies**: `index.html`, `assets/og-card.svg`
+- **Dependencies**: `index.html`, `assets/sparkle-portrait.webp`, `assets/og-card.svg`
 - **Test Criteria**:
-  - [x] `index.html` contains the 980-pixel container, 768-pixel responsive breakpoint, narrower responsive sizes, and Sparkle's robot seal.
+  - [x] `assets/sparkle-portrait.webp` is a 1024 by 1024 WebP file smaller than 200 KB.
+  - [x] `index.html` preloads the portrait and gives its `<img>` 1024-pixel intrinsic dimensions, descriptive alt text, `fetchpriority="high"`, and `decoding="async"`.
+  - [x] The stylesheet caps the portrait at 17 rem normally and 14 rem below the 768-pixel responsive breakpoint.
   - [x] `assets/og-card.svg` declares `width="1200"`, `height="630"`, and a matching view box.
   - [x] The card uses deterministic SVG text rather than generated raster text.
   - [x] OpenGraph image metadata declares the same asset path, media type, width, and height.
-  - [x] The SVG description plus OpenGraph and Twitter image alt text name the four core files shown on the card.
+  - [x] The SVG description plus OpenGraph and Twitter image alt text describe the illustrated Sparkle portrait and name the four core files shown on the card.
+  - [x] The vector portrait repeats Sparkle's ivory face, navy rim, rose star antenna, mismatched teal/blue eyes, teal collar, and open field guide.
   - [x] The four core filenames appear on the preview card.
+  - [ ] Rendered checks at 320, 390, 768, and 980 CSS pixels plus 200% zoom keep the portrait and headline visible without clipping or horizontal overflow.
 
 ### Project overview and licensing
 

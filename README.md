@@ -8,7 +8,8 @@ adapted rather than copied blindly.
 
 Key resources:
 
-- **index.html** – the public-facing Sparkle etiquette guide, including AGENTS.md, MEMORY.md, SKILLS.md, and curator-skill patterns
+- **index.html** – the public-facing Sparkle etiquette guide, including AGENTS.md, FEATURES.md, MEMORY.md, SKILLS.md, and curator-skill patterns
+- **assets/sparkle-portrait.webp** – Sparkle's optimized editorial character portrait used in the page hero
 - **assets/og-card.svg** – the OpenGraph/social preview card referenced by the page metadata
 - **AGENTS.md** – repository-wide guidance for agents contributing to this project
 - **SKILLS.md** – compact index of reusable skill folders

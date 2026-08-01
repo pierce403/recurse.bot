@@ -47,10 +47,12 @@ These instructions apply to the entire repository.
 - Positive learning: etiquette framing works best when concrete agent practices remain visible through examples and checklists.
 - Positive learning: keep Hermes' `curator` name for the default skill-management skill; it should create, update, consolidate, and prune skills as the library changes.
 - Positive learning: feature guidance is clearest when every entry uses an exact stability level, verifiable properties, and explicit test criteria that agents read before implementation and update after verification.
+- Positive learning: Sparkle feels most distinctive as an asymmetric, text-free editorial character with an expressive face, rose star antenna, mismatched teal/blue eyes, and a field guide; keep exact wording in deterministic HTML or SVG.
 - Negative learning: avoid a one-note dark blue/green console palette for this page; it underplays the etiquette-guide premise and Sparkle's personality.
 - Negative learning: do not rely on generated raster text for OpenGraph cards when exact wording matters.
 - Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.
 - Negative learning: avoid emoji-only feature status tables or marking a feature stable without acceptance evidence; neither gives future agents an exact implementation contract.
+- Negative learning: avoid generic symmetrical robot badges, dark cyberpunk styling, or inconsistent redesigns of Sparkle's signature character details.
 
 ## Collaboration notes
 - When summarizing work, mention notable decisions, trade-offs, and any rapport-building details observed from collaborators.
