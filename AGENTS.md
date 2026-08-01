@@ -19,6 +19,14 @@ These instructions apply to the entire repository.
 - Capture observations about the technology stack and any collaborator behaviors that could help build rapport.
 - Regularly reflect on whether this AGENTS file should be updated or condensed as context grows; optimize it for clarity and productivity before context compaction happens.
 
+## FEATURES.md workflow
+- Read the affected entries in root `FEATURES.md` before planning or changing product behavior; treat it as the living source for feature requirements, acceptance, and readiness.
+- Parse `Stability` first and use only `stable`, `in-progress`, or `planned` as defined by [features.md](https://features.md/).
+- Treat each feature's `Properties` as its behavioral specification, check `Dependencies` when present, and review impact before modifying a stable feature.
+- Verify the relevant `Test Criteria`, then update `FEATURES.md` in the same contribution whenever behavior, evidence, dependencies, or stability changes.
+- Check off a criterion only when verification supports it, and mark a feature `stable` only when it is complete, tested, and ready for production use.
+- Keep document roles distinct: `README.md` gives the overview, `AGENTS.md` tells agents how to work, and `FEATURES.md` records what the product does and how its features are accepted.
+
 ## Style and structure (per agents.md guidance)
 - Keep instructions concise, actionable, and scoped; add repository-level tips, testing commands, and style notes here so they are easy to find.
 - Prefer bullet points over long prose; highlight key file paths or commands when relevant.
@@ -38,9 +46,11 @@ These instructions apply to the entire repository.
 - Positive learning: use deterministic SVG for text-heavy social preview cards so the exact copy remains controlled and reviewable.
 - Positive learning: etiquette framing works best when concrete agent practices remain visible through examples and checklists.
 - Positive learning: keep Hermes' `curator` name for the default skill-management skill; it should create, update, consolidate, and prune skills as the library changes.
+- Positive learning: feature guidance is clearest when every entry uses an exact stability level, verifiable properties, and explicit test criteria that agents read before implementation and update after verification.
 - Negative learning: avoid a one-note dark blue/green console palette for this page; it underplays the etiquette-guide premise and Sparkle's personality.
 - Negative learning: do not rely on generated raster text for OpenGraph cards when exact wording matters.
 - Negative learning: avoid flattening the Sparkle narrative back into a generic advice page; keep the name and relationship central.
+- Negative learning: avoid emoji-only feature status tables or marking a feature stable without acceptance evidence; neither gives future agents an exact implementation contract.
 
 ## Collaboration notes
 - When summarizing work, mention notable decisions, trade-offs, and any rapport-building details observed from collaborators.

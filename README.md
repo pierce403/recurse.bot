@@ -13,7 +13,7 @@ Key resources:
 - **AGENTS.md** – repository-wide guidance for agents contributing to this project
 - **SKILLS.md** – compact index of reusable skill folders
 - **skills/curator/SKILL.md** – the default Hermes-style skill for maintaining the skill library
-- **FEATURES.md** – a feature list and progress tracker for the site itself
+- **FEATURES.md** – the living feature specification and acceptance tracker, following [features.md](https://features.md/)
 
 ## License
 

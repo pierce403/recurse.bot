@@ -16,12 +16,12 @@
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Sparkle's Etiquette Guide, a recursive self-improvement guide for coding agents.">
+    <meta property="og:image:alt" content="Sparkle's Etiquette Guide for coding agents, naming AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sparkle's Agent Etiquette Guide">
     <meta name="twitter:description" content="A practical code of manners for agents who want their work to compound.">
     <meta name="twitter:image" content="https://recurse.bot/assets/og-card.svg">
-    <meta name="twitter:image:alt" content="Sparkle's Etiquette Guide, a recursive self-improvement guide for coding agents.">
+    <meta name="twitter:image:alt" content="Sparkle's Etiquette Guide for coding agents, naming AGENTS.md, FEATURES.md, MEMORY.md, and SKILLS.md.">
     <meta name="theme-color" content="#f7fbff">
     <style>
         :root {
@@ -405,6 +405,29 @@
         </section>
 
         <section>
+            <h2>Feature File Etiquette</h2>
+            <p>
+                When a project has a root <code>FEATURES.md</code>, Sparkle reads the affected entries before
+                planning or changing product behavior. She treats each feature's properties as the behavioral
+                specification, checks its dependencies and test criteria, and considers the impact before
+                modifying anything already marked stable.
+            </p>
+            <p>
+                Following the open <a href="https://features.md/">features.md specification</a>, every feature
+                declares one exact stability level: <code>stable</code>, <code>in-progress</code>, or
+                <code>planned</code>. Its properties should be measurable or observable, and its test criteria
+                should make acceptance clear to both humans and agents.
+            </p>
+            <p>
+                Sparkle updates <code>FEATURES.md</code> in the same contribution whenever feature behavior,
+                evidence, dependencies, or readiness changes. She checks off criteria only after verification
+                and uses <code>stable</code> only for work that is complete, tested, and ready for production
+                use. As with all of her etiquette, projects should adapt this pattern when their own conventions
+                serve them better.
+            </p>
+        </section>
+
+        <section>
             <h2>Instruction File Etiquette</h2>
             <p>
                 Sparkle treats <code>AGENTS.md</code> as the shared notebook for every agent who works in a
@@ -507,6 +530,14 @@ If this list is empty, ask the human what responsibilities the agent should carr
 ```bash
 # Add verified commands here
 ```
+
+## Feature Specifications
+
+- Read affected entries in `FEATURES.md` before planning or changing product behavior
+- Treat feature properties as the behavioral specification
+- Check dependencies and test criteria before modifying a stable feature
+- Update behavior, evidence, dependencies, and stability in the same contribution
+- Use only `stable`, `in-progress`, or `planned`; mark `stable` only for verified, production-ready work
 
 ## Coding Conventions
 
@@ -632,12 +663,14 @@ Use this index to choose which skill folder to open next.</code></pre>
             <ol>
                 <li><strong>Name the relationship:</strong> use the agent's name, or ask the human for one.</li>
                 <li><strong>Stand in git:</strong> work inside a repository so new information has history.</li>
-                <li><strong>Read the indexes:</strong> check <code>AGENTS.md</code>, <code>MEMORY.md</code>, and <code>SKILLS.md</code>.</li>
+                <li><strong>Read the project files:</strong> check <code>AGENTS.md</code>, <code>FEATURES.md</code>, <code>MEMORY.md</code>, and <code>SKILLS.md</code>.</li>
                 <li><strong>Introduce herself:</strong> when <code>AGENTS.md</code> is first read, greet the human by name and role.</li>
                 <li><strong>Check responsibilities:</strong> if <code>AGENTS.md</code> has no responsibilities list, ask the human for one.</li>
+                <li><strong>Honor the feature spec:</strong> follow its properties, dependencies, stability, and test criteria.</li>
                 <li><strong>Use the toolbelt:</strong> prefer bash, CLI tools, <code>mcporter</code> for MCP, and Python CLIs when useful.</li>
                 <li><strong>Search before important work:</strong> use the memory index instead of guessing from context.</li>
                 <li><strong>Work in focused steps:</strong> make the change, verify it, and avoid unrelated churn.</li>
+                <li><strong>Update feature evidence:</strong> keep <code>FEATURES.md</code> current as behavior and readiness change.</li>
                 <li><strong>Record the lesson:</strong> capture wins, misses, commands, pitfalls, and collaborator cues.</li>
                 <li><strong>Curate the skills:</strong> update <code>SKILLS.md</code> and skill folders when a reusable procedure changes.</li>
                 <li><strong>Commit the knowledge:</strong> preserve the work, then push when the project flow calls for it.</li>
