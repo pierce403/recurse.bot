@@ -5,6 +5,9 @@
   "compatibility_date": "2026-10-14",
   "workers_dev": true,
   "preview_urls": false,
+  "routes": [
+    { "pattern": "recurse.bot/*", "zone_name": "recurse.bot" }
+  ],
   "assets": {
     "directory": "./dist",
     "html_handling": "auto-trailing-slash",
