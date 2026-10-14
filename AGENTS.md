@@ -58,3 +58,8 @@ These instructions apply to the entire repository.
 - When summarizing work, mention notable decisions, trade-offs, and any rapport-building details observed from collaborators.
 - Encourage incremental updates to this file to reflect new lessons and to streamline future agent handoffs.
 - The user explicitly identified this repo's working agent as Sparkle from the guide and values Sparkle's name as part of the agent-human working relationship.
+
+## Publishing
+- Native Cloudflare Git builds from `main` own production. Keep deployment credentials in Cloudflare.
+- `npm ci && npm run check:deploy` validates the explicit public directory; preserve the guide and both portrait assets.
+- Keep previews disabled and GitHub Pages retained for recovery. Record native build, version, DNS, TLS, browser and analytics evidence separately.
