@@ -130,11 +130,11 @@ Agents should parse each affected feature's stability first, use its properties 
 
 ### Cloudflare static publishing
 
-- **Stability**: in-progress
+- **Stability**: stable
 - **Description**: Publish the unchanged guide with native Git builds and visitor analytics.
 - **Properties**: `main` builds only reviewed public files; missing paths return 404; credentials stay in Cloudflare; Pages remains recovery.
 - **Dependencies**: `scripts/build-site.mjs`, `wrangler.jsonc`, `package-lock.json`
 - **Test Criteria**:
   - [x] Locked build and Wrangler dry run succeed with unchanged guide and image bytes (October 14).
-  - [ ] Exact native Git build and active version serve the public domain with valid HTTPS and real 404s.
-  - [ ] Browser rendering and visitor analytics are verified.
+  - [x] Exact native Git build and active version serve the public domain with valid HTTPS and real 404s (October 14).
+  - [x] Browser rendering, injected analytics beacon and received visitor traffic are verified (October 14).
